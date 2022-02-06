@@ -7,6 +7,6 @@
 * [RNC](rnc.md)
   * [Contract Addresses](rnc/contract-addresses.md)
 * [Power NFT](power-nft/README.md)
-  * [Diagram](power-nft/diagram.md)
   * [Commission Contract](power-nft/commission-contract.md)
+  * [Diagram](power-nft/diagram.md)
 * [ID Card](id-card.md)
