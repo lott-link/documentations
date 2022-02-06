@@ -36,6 +36,22 @@ Returns cost of every random number generation which applicant contract should p
 
 <details>
 
+<summary>linkSupply() public view</summary>
+
+Returns LINK supply of the contract
+
+</details>
+
+<details>
+
+<summary>earnedSupply() public view</summary>
+
+Returns ETH supply of the contract
+
+</details>
+
+<details>
+
 <summary>getRandomNumber(bytes4 _callBackSelector) public payable</summary>
 
 Requests for a 30 digits random number and records the applicant's information.
@@ -48,6 +64,30 @@ Requirements:
 * Enough `msg.value` should be paid by the applicant
 
 Emits a Request event
+
+</details>
+
+<details>
+
+<summary>withdrawLink(uint256 amount) external</summary>
+
+Withdraw LINK function to avoid locking LINK in the contract.
+
+Requirements:
+
+* only the owner of the contract can call this function.
+
+</details>
+
+<details>
+
+<summary>withdrawEarnedSupply() external</summary>
+
+Withdraw ETH paid by applicants
+
+Requirements:
+
+* only the owner of the contract can call this function.
 
 </details>
 
