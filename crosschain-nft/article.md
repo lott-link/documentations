@@ -1,32 +1,30 @@
 # Article
 
-**Introduction to Cross Chain NFT**
+### **Cross Chain NFT Introduction**
 
 Cross Chain NFT (Non-Fungible Token) is a unique non-interchangeable unit of data stored on such blockchain, power by smart contracts. Smart contract developers can use CrossChain NFT to communicate with other EVM compatible chain to transfer their own NFT form current blockchain to another one. They can transfer NFTs on some smart chains that rely on ERC721 like:
 
-\-      Ethereum
-
-\-      Polygon
-
-\-      Binance Smart
+* Ethereum
+* Polygon
+* Binance Smart&#x20;
 
 Cross Chain NFT on EVM compatible chain like: Ethereum, Binance Smart or Polygon enables smart contracts to approve an NFT on a blockchain and request to transfer NFT to another one. A Cross Chain NFT is the interoperability between two relatively independent blockchains. In other words, it allows blockchains to speak to one another because they’re built in a standardized way. Cross Chain NFT implementation is mainly represented by NFT swap and NFT transfer. With Cross Chains NFT, the limitations of a single chain NFT can be avoided.
 
-**Cross Chain NFT Contract**
+### **Cross Chain NFT Contract**
 
-CrossChainNFT contract Lock the \`tokenId\` from \`from\` in this contract, \`targetChainId\` and transfer to \`to\`. If \`to\` on \`targetChainId\` does not exist, token would be transfered back to \`from\` address. If \`to\` refers to a smart contract, it must implementation IERC721Receiver ‘onERC721Received’, which is called upon a safe transfer.
+CrossChainNFT contract Lock the \`tokenId\` from \`from\` in this contract, \`targetChainId\` and transfer to \`to\`. If \`to\` on \`targetChainId\` does not exist, token would be transferred back to \`from\` address. If \`to\` refers to a smart contract, it must implementation IERC721Receiver ‘onERC721Received’, which is called upon a safe transfer.
 
-**How dose Cross Chain NFT work?**
+### **How dose Cross Chain NFT work?**
 
-\-      **Token’s owner request a cross chain transfer**
+* **Token’s owner request a cross chain transfer**     &#x20;
 
 By “requestTransferCrossChain” function you can request for a cross chain transfer on EVM compatible chain. CrossChainNFT will transfer your NFT from your address to its address and hold it. It hosts an off-chain order book. Using relayer, users can find, create, fill or cancel NFTs. Relayer helps you to mint a wrapped token corresponding to your NFT on EVM compatible chain and transfer it cryptographically to the address you requested. A relayer can talk to other relayers and create a pool of orders to increase liquidity.
 
-\-      **Regards this contract, the token will be locked**
+* **Regards this contract, the token will be locked**
 
 By implementation of Cross Chain NFT and send a request on another EVM compatible chain based on contract ‘tokenId’ from ‘from’ will be locked and ‘targetChainId’ will transfer to ‘to’. if \`to\` on \`targetChainId\` does not exist, token would be transfered back to \`from\` address. If \`to\` refers to a smart contract, it must imp\`{IERC721Receiver-onERC721Received}, which is called upon a safe transfer. If the caller is not \`from\`, it must have been allowed to move this token by either ‘approve’ or ‘setApprovalForAll’.
 
-\-      **Mint a wToken by an event**
+* **Mint a wToken by an event**
 
 Relayers use ‘RelayerCallSafeMintWrappedToken’ event to mint a wToken on the \`targetChainId\` to get back the wToken on current chain. Then, relayer uses ‘RelayerCallRedeem’ event to redeem the collateral token on the other chainId.
 
