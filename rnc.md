@@ -24,3 +24,35 @@ Lottlink RNC contract is always full of LINK tokens and you can pay only current
 in later updates, the RNC contract will use [uniswap](https://docs.uniswap.org/protocol/guides/swaps) to automatically swap current chains currency to LINK token.
 {% endhint %}
 
+### functions
+
+<details>
+
+<summary>applicantFee() public view</summary>
+
+Returns cost of every random number generation which applicant contract should pay.
+
+</details>
+
+<details>
+
+<summary>getRandomNumber(bytes4 _callBackSelector) public payable</summary>
+
+Requests for a 30 digits random number and records the applicant's information.
+
+Applicant should provide a `_callBackSelector` to receive the randomness.
+
+Requirements:
+
+* Enough LINK tokens should be available in RNC To generate a random number.
+* Enough `msg.value` should be paid by the applicant
+
+Emits a Request event
+
+</details>
+
+{% swagger method="get" path="" baseUrl="" summary="" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+{% endswagger %}
