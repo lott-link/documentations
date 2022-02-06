@@ -149,9 +149,13 @@ Emits a `Win` event.
 
 <details>
 
-<summary></summary>
+<summary><code>burnAndWithdraw(uint256 tokenId) external</code></summary>
 
+Withdraw the `tokenBalance` and burn the token.
 
+Requirements:
+
+* Only the winner can call this function.
 
 </details>
 
