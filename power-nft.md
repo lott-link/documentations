@@ -159,17 +159,37 @@ Requirements:
 
 </details>
 
+#### external setting functions
+
 <details>
 
-<summary></summary>
+<summary><code>function setRoundTime(uint256 _roundTime) external</code></summary>
 
+Set the power range the random power will be selected from.
 
+Requirements:&#x20;
+
+* Only the owner of the contract can call this function.
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary><code>setAdditionalSupplyPercent(uint256 _additionalSupplyPercent) external</code></summary>
+
+Set the additional supply range that the winner token will be selected.
+
+If the additional supply percent is zero, there is a winner token every round.
+
+Requirements:
+
+* Only the owner of the contract can set commission percent.
+
+</details>
+
+<details>
+
+<summary>setAdditionalSupplyPercent(uint256 _additionalSupplyPercent) external;</summary>
 
 
 
