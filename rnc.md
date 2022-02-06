@@ -24,7 +24,27 @@ Lottlink RNC contract is always full of LINK tokens and you can pay only current
 in later updates, the RNC contract will use [uniswap](https://docs.uniswap.org/protocol/guides/swaps) to automatically swap current chains currency to LINK token.
 {% endhint %}
 
+### events
+
+<details>
+
+<summary>Request(bytes32 requestId)</summary>
+
+Emitted when an applicant requests for randomness.
+
+</details>
+
+<details>
+
+<summary>Response(bytes data)</summary>
+
+Emitted when RNC responses to the applicant.
+
+</details>
+
 ### functions
+
+#### external functions
 
 <details>
 
@@ -63,7 +83,7 @@ Requirements:
 * Enough LINK tokens should be available in RNC To generate a random number.
 * Enough `msg.value` should be paid by the applicant
 
-Emits a Request event
+Emits a [Request](rnc.md#events) event
 
 </details>
 
@@ -88,6 +108,42 @@ Withdraw ETH paid by applicants
 Requirements:
 
 * only the owner of the contract can call this function.
+
+</details>
+
+#### internal functions
+
+<details>
+
+<summary>linkPrice() internal view</summary>
+
+Returns current price of LINK compared to ETH with 18 decimal places.
+
+earned by an oracle from [chainlink data feeds](https://docs.chain.link/docs/get-the-latest-price/).
+
+</details>
+
+<details>
+
+<summary>fulfillRandomness(bytes32 requestId, uint256 randomness) internal</summary>
+
+Callback function used by VRF Coordinator.
+
+fulfills applicant last info (randomness) and responses to the applicant request.
+
+</details>
+
+<details>
+
+<summary>_response(address contractAddress, bytes4 selector, uint256 randomResult) private</summary>
+
+Response function to the applicable contract.
+
+Requirements:
+
+* call back should be successful.
+
+Emits a [Response](rnc.md#events) event
 
 </details>
 
