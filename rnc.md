@@ -14,10 +14,13 @@ Smart contracts on EVM chains which Chainlink VRF Consumer base deployed on can 
 
 RNC will automatically call the second one and fulfill the randomness.
 
-
-
 ### Motivation
 
 Solidity developers can use the [Chainlink VRF tutorial](https://docs.chain.link/docs/get-a-random-number/) to write a smart contract that consumes randomness. but there are some difficulties: it is not so gas efficient to write a contract along with all RNC functions and variables, especially in the cases that we need just a few randomness calls. the other problem is that we have to use two different currencies for a call. there should be always some LINK token available in the contract that makes us able to request to the consumer base. and in addition to that, we always need some eth or other main currencies for their own EVM chains to pay the gas fee of the transaction.
 
 Lottlink RNC contract is always full of LINK tokens and you can pay only current chains currency to generate a random number and the gas fee.
+
+{% hint style="info" %}
+in later updates, the RNC contract will use [uniswap](https://docs.uniswap.org/protocol/guides/swaps) to automatically swap current chains currency to LINK token.
+{% endhint %}
+
