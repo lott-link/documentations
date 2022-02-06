@@ -2,4 +2,5 @@
 
 * [Public NFT](README.md)
 * [CrossChain NFT](crosschain-nft.md)
-* [RNC](rnc.md)
+* [RNC](rnc/README.md)
+  * [Contract Addresses](rnc/contract-addresses.md)
