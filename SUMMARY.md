@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Public NFT](README.md)
+  * [Contract Addresses](public-nft/contract-addresses.md)
 * [CrossChain NFT](crosschain-nft/README.md)
   * [Diagram](crosschain-nft/diagram.md)
-  * [Article](crosschain-nft/article.md)
 * [RNC](rnc.md)
   * [Contract Addresses](rnc/contract-addresses.md)
 * [Power NFT](power-nft/README.md)
