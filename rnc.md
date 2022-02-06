@@ -83,7 +83,7 @@ Requirements:
 * Enough LINK tokens should be available in RNC To generate a random number.
 * Enough `msg.value` should be paid by the applicant
 
-Emits a [Request](./#events) event
+Emits a [Request](rnc.md#events) event
 
 </details>
 
@@ -143,7 +143,7 @@ Requirements:
 
 * call back should be successful.
 
-Emits a [Response](./#events) event
+Emits a [Response](rnc.md#events) event
 
 </details>
 
