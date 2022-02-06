@@ -183,15 +183,53 @@ If the additional supply percent is zero, there is a winner token every round.
 
 Requirements:
 
-* Only the owner of the contract can set commission percent.
+* Only the owner of the contract can call this function.
 
 </details>
 
 <details>
 
-<summary>setAdditionalSupplyPercent(uint256 _additionalSupplyPercent) external;</summary>
+<summary><code>setPowerRange(uint256 _powerMin, uint256 _powerMax) external</code></summary>
 
+Set the power range the random power will be selected from.
 
+Requirements:
+
+* Only the owner of the contract can call this function.
 
 </details>
+
+<details>
+
+<summary><code>setCommissionPercent(uint256 _commissionPercent) external</code></summary>
+
+Update commission percent that is being deducted from incoming values.
+
+Requirements:
+
+* Only the owner of the contract can call this function.
+
+</details>
+
+<details>
+
+<summary><code>setCommissionContract(address _commissionContAddr) external</code></summary>
+
+Update commission contract address and interface address.
+
+Requirements:
+
+* Only the owner of the contract can call this function.
+
+</details>
+
+
+
+
+
+
+
+
+
+
 
