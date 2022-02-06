@@ -4,7 +4,7 @@ description: Random Number Consumer
 
 # RNC
 
-### Summary
+### Simple Summary
 
 This is a contract that Consumes Verifiable Randomness using [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) Consumer base.
 
@@ -24,7 +24,7 @@ Lottlink RNC contract is always full of LINK tokens and you can pay only current
 in later updates, the RNC contract will use [uniswap](https://docs.uniswap.org/protocol/guides/swaps) to automatically swap current chains currency to LINK token.
 {% endhint %}
 
-### events
+### Events
 
 <details>
 
@@ -42,7 +42,7 @@ Emitted when RNC responses to the applicant.
 
 </details>
 
-### functions
+### Functions
 
 #### external functions
 
