@@ -32,27 +32,27 @@ Owener of NFT has an exclusive account with a basic access control. By default, 
 
 Regads, ‘MintRedeemInterface’ when an NFT locks in a contract on a chain; its corresponding wToken will be minted in the other chain and when the wToken burns in a chain; the real NFT will be redeemed in its own chain.interface. ‘redeem’ function redeem the \`tokenId\` of \`contAddr\` and transfer it to \`to\`. ‘safeMintWrappedToken’ function SafeMint a wToken and transfer it to \`to\` and wToken holds the the data of real token.
 
-\-      **wToken mint by relayer in another chain**
+* **wToken mint by relayer in another chain** &#x20;
 
 By WrapERC-721 contract that is a multi-chain contract, when an NFT locks in a contract on a chain; its corresponding wToken will be minted in the other chain. When the wToken burns in a chain; the real NFT will be redeemed in its own chain. ‘setImplementation’ function Set a new implementationAddr to do cross chain transactions. Owner of the token should approve the contract to lock the ‘tokenId’ of ‘contAddr’. only implementationAddr can call ‘redeem’ function to redeem the \`tokenId\` of \`contAddr\` and transfer it to \`to\`. ‘implementationAddr’ can call ‘SafeMint’ function to mint a ‘wToken’ and transfer it to \`to\`. ‘wToken’ holds the real token data. ‘burnWrappedToken’ function burn the ‘wTokenId’ that caller should be owner or approved by the owner. very ‘wToken’ is representing a real NFT which holds its data in this contract. when a ‘wToken’ mints, its data sets and when a ‘wToken’ burns its data will be burned too. ‘tokenURI’ function returns the URI of real NFTs representing.
 
-\-      **Back NFT to the real chain**
+* **Back NFT to the real chain**&#x20;
 
 ‘CrossChainImplementation’ contract Emitted a request to relayer to mint a wToken owned by \`to\` on \`targetChainId\`. Then redeem the locked token and transfer it to \`to\` by emitting another request to relayer.
 
 ‘CrossChainImplementationInterface’ is an interface that contains two functions:  ‘requestTransferCrossChain’ and ‘requestReleaseLockedToken’ function signatures without the function definition implementation.
 
-\-      **Storage wToken Data in contract**
+* **Storage wToken Data in contract**    &#x20;
 
 In ‘WrapERC721DataStorage’ contract every wToken is representing a real NFT which holds its data in this contract. When a wToken mints, its data sets and when a wToken burns its data will be burned too.
 
-**Cross Chain NFT Implementation**
+### **Cross Chain NFT Implementation**
 
-\-      **Mint and Redeem a wToken**
+* **Mint and Redeem a wToken**
 
 Relayers use ‘RelayerCallSafeMintWrappedToken’ event to mint a wToken on the \`targetChainId\`. Relayer uses ‘RelayerCallRedeem’ event to redeem the locked token and transfer it to \`to\` by emitting a request.
 
-\-      **Mint and Redeem Payment**
+* **Mint and Redeem Payment**     &#x20;
 
 In payment contract, ‘mintFee’ function returns the fee needed to mint a token on the \`targetChainId\`. ‘redeemFee’ function returns the fee needed to redeem a token on the \`targetChainId\`. In both function \`targetChainId\` should be supported by this contract.
 
