@@ -4,6 +4,7 @@
   * [Contract Addresses](public-nft/contract-addresses.md)
 * [CrossChain NFT](crosschain-nft/README.md)
   * [Diagram](crosschain-nft/diagram.md)
+  * [Contract Addresses](crosschain-nft/contract-addresses.md)
 * [RNC](rnc.md)
   * [Contract Addresses](rnc/contract-addresses.md)
 * [Power NFT](power-nft/README.md)
