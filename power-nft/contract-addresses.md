@@ -35,3 +35,15 @@
 | EVM Chains | Contract Addresses                                                                                                                 |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Rinkeby    | [0x3faC4541E42C48CEeb82275ba00676391BEfc347](https://rinkeby.etherscan.io/address/0x3faC4541E42C48CEeb82275ba00676391BEfc347#code) |
+
+#### Power NFT V\_0.1.3
+
+| EVM Chains | Contract Addresses                                                                                                                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Rinkeby    | [0xe9c3F53f5F0c3E2f2cA2a052A2906684DeD57826](https://rinkeby.etherscan.io/address/0xe9c3F53f5F0c3E2f2cA2a052A2906684DeD57826#code) |
+
+#### Commission Contract V\_0.1.6
+
+| EVM Chains | Contract Addresses                                                                                                                 |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Rinkeby    | [0x6ebb6ff758f1bee0d015Fc405AFCf879dA1821fc](https://rinkeby.etherscan.io/address/0x6ebb6ff758f1bee0d015Fc405AFCf879dA1821fc#code) |
