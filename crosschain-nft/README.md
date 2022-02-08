@@ -1,3 +1,3 @@
 # CrossChain NFT
 
-something here on Cross-Chain NFT
+Cross Chain NFT Introduction

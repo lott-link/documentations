@@ -4,8 +4,6 @@ description: Random Number Consumer
 
 # RNC
 
-### something here
-
 ### Simple Summary
 
 This is a contract that Consumes Verifiable Randomness using [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf/) Consumer base.
