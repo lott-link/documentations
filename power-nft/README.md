@@ -1,5 +1,7 @@
 # Power NFT
 
+### I added a heading at the top
+
 ### Simple Summary
 
 It is an NFTcontract that rewards its token owners every round of time by random.
