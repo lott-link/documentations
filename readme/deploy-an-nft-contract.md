@@ -13,3 +13,9 @@ By opening Remix-Ethereum IDE, the contract can be compiled there by using the C
 Some immutable storage, like [IPFS](https://ipfs.io) is ideal storage for the NFT metadata. For uploading the NFT data and publishing it to IPFS, Pinata is a simple service. It gives 1Gb storage to upload the NFT data.
 
 After uploading, the CID of the image will be generated that is unique identifier on the IPFS. The file can be checked through the public IPFS gateway on the [https://ipfs.io/ipfs/{cid}](https://ipfs.io/ipfs/%7Bcid%7D) URL. By the image CID, the metadata JSON can easily be created.
+
+On the bottom of the left side of the token contract click and open on safeMint function. It has two parameters, one is the address of the NFT owner (must be different than the contract creator) and the other is the metadata URI. The URI will be ipfs://{CID of the metadataJSON}.
+
+New NFT token will be minted through confirming the transaction in MetaMAsk. Now the NFT token is on NFT marketplace, OpenSea, where you can sell or buy NFTs on many EVM compatible chains. The URL of minted token on OpenSea is [https://opensea.io/assets/](https://opensea.io/assets/){contract address}/{NFT id}.
+
+As you can see, without any programming experienve creating NFT contracts and minting NFTs are super simple with great tools like OpenZeppelin, Remix, or MetaMask.
