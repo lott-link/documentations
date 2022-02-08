@@ -11,4 +11,5 @@
   * [Commission Contract](power-nft/commission-contract.md)
   * [Contract Addresses](power-nft/contract-addresses.md)
   * [Diagram](power-nft/diagram.md)
-* [ID Card](id-card.md)
+* [ID Card](id-card/README.md)
+  * [ID Card subpage](id-card/id-card-subpage.md)
