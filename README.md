@@ -1,3 +1,3 @@
 # Public NFT
 
-how to change this page
+I wrote down something here in Public NFT
