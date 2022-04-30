@@ -6,6 +6,7 @@
 * [CrossChain NFT](crosschain-nft/README.md)
   * [Diagram](crosschain-nft/diagram.md)
   * [Article](crosschain-nft/article.md)
+  * [for test](crosschain-nft/for-test.md)
 * [RNC](rnc.md)
   * [Contract Addresses](rnc/contract-addresses.md)
 * [Power NFT](power-nft/README.md)
