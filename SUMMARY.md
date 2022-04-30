@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Public NFT](README.md)
+* [public-nft](README.md)
   * [Deploy an NFT Contract](readme/deploy-an-nft-contract.md)
   * [What is NFT](readme/what-is-nft.md)
 * [CrossChain NFT](crosschain-nft/README.md)
