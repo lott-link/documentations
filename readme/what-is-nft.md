@@ -6,4 +6,4 @@ A **non-fungible token** (**NFT**) is a non-interchangeable collectable digital 
 
 What is NFT used for?
 
-Artists and content create their ware on a blockchain as NFTs. this is a good Opportunity for them to monetize their digital objects. They can sell their are directly to the consumer. The best attractive feature is that they receive a percentage of sale that it sold to the new customer.
+Artists and content create their ware on a blockchain as NFTs. this is a good Opportunity for them to monetize their digital objects. They can sell their art directly to the consumer. The best attractive feature is that they receive a percentage of sale that it sold to the new customer.
